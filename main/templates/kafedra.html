@@ -1,0 +1,381 @@
+{% extends 'base.html' %}
+{% block content%}
+
+
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5">
+    <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Kafedra Haqida</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Asosiy</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Kafedra</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<style>
+    .page-header {
+        background: linear-gradient(to right bottom, rgb(24, 75, 176), rgba(29, 26, 191, 0.5), rgba(26, 191, 180, 0.5));
+        background-size: cover;
+    }
+</style>
+<!-- Page Header End -->
+
+
+<!-- Feature Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="btn-lg-square bg-primary rounded-circle me-3">
+                        <i class="fa fa-graduation-cap text-white"></i>
+                    </div>
+                    <h1 class="mb-0" data-toggle="counter-up">3453</h1>
+                </div>
+                <h5 class="mb-3">Magistr talabalar</h5>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="btn-lg-square bg-primary rounded-circle me-3">
+                        <i class="fa fa-graduation-cap text-white"></i>
+                    </div>
+                    <h1 class="mb-0" data-toggle="counter-up">4234</h1>
+                </div>
+                <h5 class="mb-3">Bakalavr talabalar</h5>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="btn-lg-square bg-primary rounded-circle me-3">
+                        <i class="fa fa-users text-white"></i>
+                    </div>
+                    <h1 class="mb-0" data-toggle="counter-up">267</h1>
+                </div>
+                <h5 class="mb-3">O'qituvchilar</h5>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="btn-lg-square bg-primary rounded-circle me-3">
+                        <i class="fa fa-briefcase text-white"></i>
+                    </div>
+                    <h1 class="mb-0" data-toggle="counter-up">47</h1>
+                </div>
+                <h5 class="mb-3">Hamkorlar</h5>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature Start -->
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="text-primary">Kafedrada O'qitiladigan Fanlar</h1>
+
+        </div>
+        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+                <ul class="list-inline mb-5" id="portfolio-flters">
+                    <li class="mx-2 active" data-filter="*">Barchasi</li>
+                    <li class="mx-2" data-filter=".first">Bakalavriat</li>
+                    <li class="mx-2" data-filter=".second">Magistratura</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/img/web.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/img/web.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Web dasturlashga kirish</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem; width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Komputer animatsiyasi</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mobil ilovalar ishlab chiqish</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mutaxassislik tanlov fani (Multimediali ma’lumotlari bazasi)</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg"alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Web dizayn</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mutaxassislik tanlov fani (Multimedia injiniringi)</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mutaxassislik tanlov fani (Multimedia dizayn)</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mutaxassislik tanlov fani (3D texnologiya)</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mutaxassislik tanlov fani (Virtual reallik)</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg"alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mutaxassislik tanlov fani (SMM)</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mutaxassislik tanlov fani (Kompyuter o‘yinlari yaratish)</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg"alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Mashinali o‘qitish</p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid" style="height: 13rem;width: 25rem;" src="/media/animation.jpg" alt="">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="/media/animation.jpg"
+                            data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="text-primary mb-0">Axborotlarni vizuallashtirish va aks ettirishda multimedia usullar
+                    </p>
+                    <hr class="text-primary w-25 my-2">
+                    <h5 class="lh-base">Biz quyosh va qayta tiklanadigan energiya sanoatining yutimizda
+                        rivojlantiramiz</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="text-primary">Meyoriy hujjatlar</h1>
+        </div>
+        <div>
+            <div class="page-content1">
+
+                <div class="tt_linehead">
+                    <h2><span>O'zbekiston Respublikasi qonunlari</span></h2>
+                </div>
+                <div class="page-content">
+
+                    <h4><a target="_blank" href="http://www.lex.uz/pages/GetAct.aspx?lact_id=16188">O'zbekiston
+                            Respublikasining "Ta'lim to'g'risida"gi Qonuni</a></h4>
+                    <h4><a target="_blank" href="http://lex.uz/pages/getpage.aspx?lact_id=48401">O'zbekiston
+                            Respublikasining "Kadrlar tayyorlash milliy dasturi"</a></h4>
+                    <h4><a target="_blank" href="http://www.lex.uz/pages/GetAct.aspx?lact_id=83472">O'zbekiston
+                            Respublikasining "Axborotlashtirish to'g'risida"gi Qonuni</a><a target="_blank"
+                            href="http://www.lex.uz/pages/GetAct.aspx?lact_id=16188"><br></a></h4>
+                    <h4><a target="_blank" href="http://www.lex.uz/pages/GetAct.aspx?lact_id=2650293">O'zbekiston
+                            Respublikasining "Elektron tijorat to'g'risida"gi Qonuni</a><a target="_blank"
+                            href="http://www.lex.uz/pages/GetAct.aspx?lact_id=83472"><br></a></h4>
+                    <h4><a target="_blank"
+                            href="http://lex.uz/pages/getpage.aspx?lact_id=2833860&amp;query=%20%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%20%D2%B3%D1%83%D0%BA%D1%83%D0%BC%D0%B0%D1%82">O'zbekiston
+                            Respublikasining "Elektron hukumat to'g'risida"gi Qonuni</a><a target="_blank"
+                            href="http://www.lex.uz/pages/GetAct.aspx?lact_id=83472"><br></a></h4>
+                    <h4><a target="_blank" href="http://lex.uz/pages/getpage.aspx?lact_id=64467">O'zbekiston
+                            Respublikasining "Elektron raqamli imzo to'g'risida"gi Qonuni </a><a target="_blank"
+                            href="http://www.lex.uz/pages/GetAct.aspx?lact_id=83472"><br></a></h4>
+                    <h4><a target="_blank" href="http://lex.uz/pages/getpage.aspx?lact_id=165079">O'zbekiston
+                            Respublikasining "Elektron hujjat aylanishi to'g'risida"gi Qonuni</a><a target="_blank"
+                            href="http://www.lex.uz/pages/GetAct.aspx?lact_id=83472"><br></a></h4>
+                    <h4><a target="_blank" href="http://lex.uz/Pages/GetAct.aspx?lact_id=33150">O'zbekiston
+                            Respublikasining "Telekommunikatsiyalar to'g'risida"gi Qonuni</a></h4>
+                    <h4><a target="_blank" href="http://www.lex.uz/Pages/GetAct.aspx?lact_id=25251">O'zbekiston
+                            Respublikasining "Pochta aloqasi to'g'risida"gi Qonuni <br></a></h4>
+                    <h4><a target="_blank" href="http://www.lex.uz/Pages/GetAct.aspx?lact_id=15674">O'zbekiston
+                            Respublikasining "Aloqa to'g'risida"gi Qonuni <br></a></h4>
+                    <h4><a target="_blank" href="http://lex.uz/pages/getpage.aspx?lact_id=2509996">O'zbekiston
+                            Respublikasining "Jismoniy va yuridik shaxslarning murojaatlari to'g'risida"gi
+                            Qonuni</a>
+                    </h4>
+                    <p class=""><br></p>
+                </div>
+                <div class="tt_linehead">
+                    <h2><span>O'zbekiston Respublikasi Vazirlar Mahkamasi qonunlari</span></h2>
+                </div>
+                <div class="page-content">
+
+                    <h4><a target="_blank" href="http://lex.uz/pages/getpage.aspx?lact_id=1986827">Zamonaviy
+                            axborot-kommunikatsiya texnologiylarini yanada joriy etish va rivojlantirish
+                            chora-tadbirlari to'g'risida. O'zbekiston Respublikasi Presidentining Qarori 2012 yil 21
+                            mart, 1730-son</a><span id="lbACT"><a name="1987250" id="1987250"></a></span><span
+                            id="lbACT"></span></h4>
+                    <h4 class="" align="left"><a target="_blank"
+                            href="http://lex.uz/pages/getpage.aspx?lact_id=2239895">Mamlakatimizning dasturiy
+                            ta'minot
+                            vositalari ishlab chiquvchilarini rag'batlantirishni yanada kuchaytirish
+                            chora-tadbirlari
+                            to'g'risida. O'zbekiston Respublikasi Presidentining Qarori 2013 yil 20 sentyabr,
+                            2042-son</a><a target="_blank" href="http://lex.uz/pages/getpage.aspx?lact_id=2239895">
+                        </a>
+                    </h4>
+                    <h4 class=""><a name="1987250" id="1987250"></a><a name="1987250" id="1987250"></a><span
+                            id="lbACT"><a name="1987250" id="1987250"></a></span></h4>
+                    <h4 class="" align="left"><a href="http://lex.uz/pages/getpage.aspx?lact_id=3152688&amp;query=218"
+                            target="_blank">O'zbekiston Respublikasi Prezidentining "O'zbekiston Respublikasi
+                            Qurolli
+                            Kuchlari safida muddatli harbiy xizmatni o'tab bo'lgan fuqarolarga imtiyozlar tizimini
+                            takomillashtirishga oid qo'shimcha chora-tadbirlar to'g'risida" 2012 yil 31 maydagi
+                            PQ-1765-sonli qaroriga o'zgartirishlar kiritish to'g'risida</a><br></h4>
+                    <h4 class="" align="left"><a href="https://tuit.uz/static/uploads/files/m/b/5cf262b8b3682.pdf"
+                            target="_blank">Oliy ta'lim muassasalariga test sinovlari orqali qabul qilish tizimini
+                            takomillashtirish bo'yicha qo'shimcha chora-tadbirlar to'g'risida.O'zbekiston
+                            Respublikasi
+                            Prezidentining qarori 2019 yil 14 may, №ПҚ-4319</a></h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock%}

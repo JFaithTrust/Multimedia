@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% block content%}
+<main class="container mt-3 mb-5">
+	<h3 class="border-bottom pb-1 my-4">{{news.catgeory.title }}</h3>
+	<!-- News Box -->
+
+	{% for news in all_news %}
+
+	<div class="card mb-4 shadow">
+		<div class="row no-gutters">
+			<div class="col-md-3">
+				<img src="/media/{{news.image}}" class="card-img" alt="{{news.title}}">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title"><a href="/detail.html">{{news.title}}</a></h5>
+					<p class="card-text">{{news.detail}}</p>
+					<p class="card-text"><a href="/detail/{{news.id}}" class="btn btn-sm btn-primary">Read Full
+							<span>&rarr;</span></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<style>
+		img {
+			float: left;
+
+			width: 100%;
+			padding: 20px 10px;
+			padding-top: 20px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+			padding-left: 10px;
+			display: block;
+			object-fit: cover;
+
+		}
+
+		.col-md-3 {
+			margin-bottom: 10px;
+			float: left;
+			height: 25rem;
+		}
+
+		.card {
+			display: grid;
+			width: 114rem;
+			grid-gap: 6rem;
+			grid-template-rows: repeat(auto-fit, minmax(30rem, 1fr));
+			align-items: start;
+		}
+
+		.card .row {
+			margin-right: 18%;
+			background-color: #fff;
+			border-radius: 0.4rem;
+			overflow: hidden;
+			box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			transition: 0.2s;
+		}
+
+		.card .row {
+			margin-top: 10rem;
+		}
+
+		.row:hover {
+			transform: translateY(-0.5%);
+			box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+		}
+
+		.card-title {
+			font-size: 3rem;
+			font-weight: 500;
+			color: #0d0d0d;
+			margin-bottom: 1.5rem;
+		}
+
+		.btn {
+
+			display: block;
+			float: right;
+			width: 30%;
+			padding: 1.5rem;
+			font-size: 1.4rem;
+			text-align: center;
+			color: #839ae4;
+			background-color: #e6ecff;
+			border: none;
+			border-radius: 0.8rem;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+
+		.btn span {
+			margin-left: 1rem;
+			transition: 0.2s;
+		}
+
+		.btn:hover,
+		.btn:active {
+			background-color: #6979b1;
+			transition: 0.3 ease linear;
+		}
+
+		.btn:hover span,
+		.btn:active span {
+			margin-left: 1.5rem;
+		}
+
+		@media only screen and (max-width:715px) {
+			.container {
+				width: 715px;
+
+			}
+
+			.col-md-3 {
+				width: 650px;
+				height: 250px;
+			}
+
+			.container .row {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.container .card {
+				width: 650px;
+				margin-left: 60px;
+			}
+
+			.container .col-md-8 h5 {
+				font-size: 2rem;
+			}
+
+			.container .col-md-8 {
+				margin-left: 1.1rem;
+				margin-top: 15rem;
+			}
+
+
+
+			.card .row {
+				box-shadow: none;
+			}
+
+			.container .btn {
+
+				float: left;
+				width: 200px;
+			}
+
+			.container h1 {
+
+				font-size: 2.3rem;
+				margin-left: 60px;
+			}
+		}
+		@media only screen and (max-width:450px) {
+			.container {
+				width: 450px;
+
+			}
+
+			.col-md-3 {
+				width: 380px;
+				height: 250px;
+			}
+
+			.container .row {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.container .card {
+				width: 380px;
+				margin-left: 60px;
+			}
+
+			.container .col-md-8 h5 {
+				font-size: 2rem;
+			}
+
+			.container .col-md-8 {
+				margin-left: 1.1rem;
+				margin-top: 15rem;
+			}
+
+
+
+			.card .row {
+				box-shadow: none;
+			}
+
+			.container .btn {
+
+				float: left;
+				width: 200px;
+			}
+
+			.container h1 {
+
+				font-size: 2.3rem;
+				margin-left: 60px;
+			}
+		}
+	</style>
+	{% endfor %}
+</main>
+
+
+{% endblock%}

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<div class="container-fluid page-header py-5 mb-5">
+	<div class="container py-5">
+		<h1 class="display-3 text-white mb-3 animated slideInDown">Kafedra Haqida</h1>
+		<nav aria-label="breadcrumb animated slideInDown">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-white" href="#">Asosiy</a></li>
+				<li class="breadcrumb-item text-white active" aria-current="page">O'qtuvchilar</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+<style>
+	.page-header {
+		background: linear-gradient(to right bottom, rgb(24, 75, 176), rgba(29, 26, 191, 0.5), rgba(26, 191, 180, 0.5));
+		background-size: cover;
+	}
+</style>
+<!-- Page Header End -->
+
+
+<!-- Team Start -->
+<div class="container-xxl py-5">
+	
+	<div class="container">
+		<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+			<h1 class="text-primary">O'qituvchilarimiz</h1>
+		</div>
+		<div class="row g-4">
+			{% for teacher in all_teachers %}
+			<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex">
+						<img class="img-fluid w-75" src="/media/{{teacher.image}}" alt="{{teacher.full_name}}" style="height: 280px;">
+						<div class="team-social w-25">
+							<a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+									class="fab fa-facebook-f"></i></a>
+							<a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+									class="fab fa-twitter"></i></a>
+							<a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
+									class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+					<div class="p-4">
+						<h5>{{teacher.full_name}}</h5>
+						<span>{{teacher.bio}}</span>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+
+		</div>
+
+	</div>
+	
+</div>
+
+<!-- Team End -->
+
+{% endblock%}

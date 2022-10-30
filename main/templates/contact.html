@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block content%}
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5">
+	<div class="container py-5">
+		<h1 class="display-3 text-white mb-3 animated slideInDown">Kafedra Haqida</h1>
+		<nav aria-label="breadcrumb animated slideInDown">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-white" href="#">Asosiy</a></li>
+				<li class="breadcrumb-item text-white active" aria-current="page">Aloqa</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+<style>
+	.page-header {
+		background: linear-gradient(to right bottom, rgb(24, 75, 176), rgba(29, 26, 191, 0.5), rgba(26, 191, 180, 0.5));
+		background-size: cover;
+	}
+</style>
+<!-- Page Header End -->
+
+
+<!-- Contact Start -->
+<div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
+	<div class="container contact px-lg-0">
+		<div class="row g-0 mx-lg-0">
+			<div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+				<div class="p-lg-5 ps-lg-0">
+					<h1 class="text-primary">Biz bilan bog'laning</h1>
+					<p class="mb-4">Barcha talab va takliflaringizni biz bilan ulashing.</p>
+					{% for message in messages%}
+					{% endfor %}
+					<form method="post" action="/contact">
+						{% csrf_token %}
+						<div class="row g-3">
+							<div class="col-md-6">
+								<div class="form-floating">
+									<input type="text" name="full_name" required class="form-control" id="name" placeholder="Ism / Familya"/> 
+									<label for="name">Ism / Familya</label>
+								</div>
+							</div>
+							
+							<div class="col-md-6">
+								<div class="form-floating">
+									<input type="email" name="email" required class="form-control" id="email"
+										placeholder="E-pochta manzili">
+									<label for="email">E-pochta manzili</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-floating">
+									<input type="text" name="phone" required class="form-control" id="subject" placeholder="Tel">
+									<label for="subject">Telefon raqam</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-floating">
+									<input type="text" name="title" required  class="form-control" id="subject" placeholder="Mavzu">
+									<label for="subject">Mavzu</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-floating">
+									<textarea class="form-control" name="full_text" placeholder="Xabar" id="message"
+										style="height: 100px"></textarea>
+									<label for="message">Xabar</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Xabarni
+									Jo'natish</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+				<div class="position-relative h-100">
+					<iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.5255011926406!2d69.28454511519907!3d41.3409303068372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b534175ed31%3A0x52a8f9d9414a2ad8!2z0KLQsNGI0LrQtdC90YLRgdC60LjQuSDQo9C90LjQstC10YDRgdC40YLQtdGCINCY0L3RhNC-0YDQvNCw0YbQuNC-0L3QvdGL0YUg0KLQtdGF0L3QvtC70L7Qs9C40Lk!5e0!3m2!1sru!2s!4v1660025698446!5m2!1sru!2s"
+						frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock%}

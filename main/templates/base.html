@@ -1,0 +1,383 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load sass_tags %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{% block title %}Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti Multimediya
+    Texnologiyalari
+    Kafedrasi {% endblock%}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="csrf-param" content="_csrf">
+  <meta name="csrf-token"
+    content="dLdl32JvXhZSrx18T88bP3QfJJS5L2guJO2mBcQjRkQB9SatLxcyfgWcdU0Ll10HIyZuzMpkHUQWh9FEjXEJIQ==">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge ">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="{% static  'vendor/lib/animate/animate.min.css' %}">
+  <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="{% static  'vendor/lib/owlcarousel/assets/owl.carousel.min.css' %}">
+  <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="{% static  'vendor/lib/lightbox/css/lightbox.min.css' %}">
+  <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="{% static  'vendor/css/bootstrap.min.css' %}">
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Template Stylesheet -->
+  <link rel="stylesheet" href="{% static  'vendor/css/style.css' %}">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+  <!-- for bootstrap 5 onine -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <link href="{% sass_src 'vendor/scss/bootstrap.scss' %}" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small>Amir Temur Shox k, Toshkent sh, O'ZB</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <small class="fa fa-map-marker-alt text-primary me-2"></small>
+          <small><a target="_blank" href="http://360.tuit.uz/">
+              <span><b>TUIT - 360’</b></span>
+
+            </a></small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>Du - Shan : 09.00 AM - 09.00 PM</small>
+        </div>
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center me-4">
+          <small class="fa fa-phone-alt text-primary me-2"></small>
+          <small>+998 94 292 22 62</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center mx-n2">
+          <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+              class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+              class="fab fa-twitter"></i></a>
+          <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <style>
+      .text-primary {
+        color: #3278c3 !important
+      }
+
+      a {
+        color: #0d6efd;
+      }
+
+      a:hover {
+        color: #0a58ca;
+      }
+
+      .btn-link {
+        color: #3278c3;
+      }
+
+      .btn-link:hover {
+        color: #0a58ca;
+      }
+
+      .bg-primary {
+        background-color: #3278c3 !important;
+      }
+
+      .btn-primary {
+        color: #000;
+        background-color: #3278c3;
+        border-color: #3278c3;
+      }
+
+      .btn-primary:hover {
+        color: #000;
+        background-color: #0a58ca;
+        border-color: #0a58ca;
+      }
+
+      .btn-outline-primary {
+        color: #3278c3;
+        border-color: #3278c3;
+      }
+
+      .btn-outline-primary:hover {
+        color: #fff;
+        background-color: #3278c3;
+        border-color: #3278c3;
+      }
+
+      .btn-square,
+      .btn-sm-square,
+      .btn-lg-square {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+      }
+
+      .testimonial-carousel .owl-nav .owl-prev,
+      .testimonial-carousel .owl-nav .owl-next {
+        position: relative;
+        color: #3278c3;
+        font-size: 45px;
+        transition: .5s;
+      }
+
+      .footer .btn.btn-social:hover {
+        color: #3278c3;
+        border-color: var(--light);
+      }
+
+      .contact {
+        margin-left: 3rem;
+      }
+
+      #portfolio-flters li:hover,
+      #portfolio-flters li.active {
+        color: #3278c3;
+        border-color: #3278c3;
+      }
+
+      @media (max-width:991px) {
+        .contact {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </div>
+  <!-- Topbar End -->
+
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+      <!-- <h2 class="m-0 text-primary">Solartec</h2> -->
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="421.613"
+        viewBox="0 0 678 421.613">
+        <defs>
+          <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#6ee2f5" />
+            <stop offset="1" stop-color="#6454f0" />
+          </linearGradient>
+          <linearGradient id="linear-gradient-2" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#6ee2f5" />
+            <stop offset="0.201" stop-color="#6ab2f4" />
+            <stop offset="0.325" stop-color="#69a1f3" />
+            <stop offset="0.417" stop-color="#699af3" />
+            <stop offset="1" stop-color="#6454f0" />
+          </linearGradient>
+        </defs>
+        <g id="Group_18" data-name="Group 18" transform="translate(-3558 -1051.387)">
+          <text id="TEXNOLOGIYALARI_KAFEDRASI" data-name="TEXNOLOGIYALARI KAFEDRASI" transform="translate(3897 1465)"
+            fill="#6bbaf3" font-size="30" font-family="Montserrat-Bold, Montserrat" font-weight="700"
+            letter-spacing="0.05em">
+            <tspan x="-256.83" y="0">TEXNOLOGIYALARI KAFEDRASI</tspan>
+          </text>
+          <g id="Group_3" data-name="Group 3" transform="translate(2727.036 488)">
+            <path id="Path_1" data-name="Path 1"
+              d="M1250.615,671.476,1088.98,578.155c-29.558-17.066-58.3-19.268-80.925-6.2s-35.091,39.055-35.091,73.185v82.178c0,34.23,12.472,60.284,35.121,73.36a63.35,63.35,0,0,0,32.062,8.389c15.222,0,31.67-4.859,48.367-14.5L1170,747.52l-34.065-19.667-64.453,37.212c-18.1,10.448-34.995,12.673-46.365,6.11-11.495-6.638-18.089-22.624-18.089-43.86V645.137c0-21.136,6.583-37.059,18.059-43.685s28.557-4.364,46.861,6.2l161.635,93.321a17.032,17.032,0,1,0,17.032-29.5Z"
+              fill="url(#linear-gradient)" />
+            <path id="Path_2" data-name="Path 2" d="M1135.936,727.852l-34.064,19.668,34.064,19.667L1170,747.52Z"
+              fill="#6458f0" />
+            <path id="Path_3" data-name="Path 3"
+              d="M1331.914,571.776c-22.52-13-51.087-10.833-80.43,6.11L1170,624.932l34.064,19.667,64.453-37.213c18.094-10.448,34.993-12.676,46.365-6.109,11.495,6.637,18.09,22.624,18.09,43.86v82.178c0,21.135-6.581,37.058-18.058,43.683s-28.557,4.366-46.862-6.2l-161.636-93.32a17.032,17.032,0,1,0-17.032,29.5L1251.02,794.3c16.839,9.721,33.41,14.62,48.739,14.619a63.577,63.577,0,0,0,32.186-8.418c22.629-13.064,35.092-39.055,35.09-73.183V645.137C1367.034,610.905,1354.563,584.852,1331.914,571.776Z"
+              fill="url(#linear-gradient-2)" />
+            <path id="Path_4" data-name="Path 4" d="M1238.127,624.932l-34.062-19.667L1170,624.932l34.063,19.666Z"
+              fill="#6458f0" />
+          </g>
+          <text id="MULTIMEDIA" transform="translate(3897 1407)" fill="#6458f0" font-size="100"
+            font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.02em">
+            <tspan x="-338.85" y="0">MULTIMEDIA</tspan>
+          </text>
+        </g>
+      </svg>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="/" class="nav-item nav-link active">Asosiy</a>
+        <div class="nav-item dropdown">
+          <a href="/kafedra" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kafedra</a>
+          <div class="dropdown-menu bg-light m-0">
+            <a href="/kafedra" class="dropdown-item">Kafedra haqida</a>
+            <a href="/kafedra" class="dropdown-item">Meyoriy hujjatlar</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="/faoliyat" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Faoliyat</a>
+          <div class="dropdown-menu bg-light m-0">
+            <a href="/faoliyat" class="dropdown-item">O'quv faoilyat</a>
+            <a href="/faoliyat" class="dropdown-item">Ilmiy faoliyat</a>
+            <a href="/faoliyat" class="dropdown-item">Xalqaro faoliyat</a>
+            <a href="/faoliyat" class="dropdown-item">Ijtimoiy Faoliyat</a>
+            <a href="/faoliyat" class="dropdown-item">Doktorantura</a>
+          </div>
+        </div>
+        <a href="/all-teachers" class="nav-item nav-link">O'qituvchilar</a>
+        <div class="nav-item dropdown">
+          <a href="/all-students" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Talabalar</a>
+          <div class="dropdown-menu bg-light m-0">
+            <a href="/all-students" class="dropdown-item">Iqtidorli talabalarimiz</a>
+          </div>
+        </div>
+        <a href="/contact" class="nav-item nav-link">Aloqa</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+
+
+
+  {% block content %}
+  {% endblock%}
+
+
+
+
+
+  <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Manzil</h5>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Amir Temur shoh k, Toshkent sh, O"ZB</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+998 94 292 2262</p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i>jahongirsolijoniy@gmail.com</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-4">Tezkor havolalar</h5>
+          <a class="btn btn-link" href="/kafedra">Kafedra</a>
+          <a class="btn btn-link" href="/faoliyat">Faoliyat</a>
+          <a class="btn btn-link" href="/all-teachers">O'qituvchilar</a>
+          <a class="btn btn-link" href="/all-students">Talabalar</a>
+          <a class="btn btn-link" href="/contact">Aloqa</a>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <h5 class="text-white text-center mb-4">Joylashuv</h5>
+          <div class="row g-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.542915187498!2d69.28751700278757!3d41.3405517146652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b534175ed31%3A0x52a8f9d9414a2ad8!2z0KLQsNGI0LrQtdC90YLRgdC60LjQuSDQo9C90LjQstC10YDRgdC40YLQtdGCINCY0L3RhNC-0YDQvNCw0YbQuNC-0L3QvdGL0YUg0KLQtdGF0L3QvtC70L7Qs9C40Lk!5e0!3m2!1sru!2s!4v1659711472996!5m2!1sru!2s"
+              width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <!-- <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Newsletter</h5>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button"
+                        class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                </div>
+            </div> -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a href="#">Multimediya</a>, Barcha huquqlar himoyalangan.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            <a href="https://htmlcodex.com">HTML Codex</a> tomonidan ishlab chiqilgan
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="{% static 'vendor/lib/wow/wow.min.js' %}"></script>
+  <!-- <script src="lib/wow/wow.min.js"></script> -->
+
+  <script src="{% static 'vendor/lib/easing/easing.min.js' %}"></script>
+  <!-- <script src="lib/easing/easing.min.js"></script> -->
+
+  <script src="{% static 'vendor/lib/waypoints/waypoints.min.js' %}"></script>
+  <!-- <script src="lib/waypoints/waypoints.min.js"></script> -->
+
+  <script src="{% static 'vendor/lib/counterup/counterup.min.js' %}"></script>
+  <!-- <script src="lib/counterup/counterup.min.js"></script> -->
+
+  <script src="{% static 'vendor/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+
+  <script src="{% static 'vendor/lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <!-- <script src="lib/isotope/isotope.pkgd.min.js"></script> -->
+
+  <script src="{% static 'vendor/lib/lightbox/js/lightbox.min.js' %}"></script>
+  <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
+
+  <!-- Template Javascript -->
+  <script src="{% static 'vendor/js/main.js' %}"></script>
+  <!-- <script src="js/main.js"></script> -->
+
+</body>
+
+</html>

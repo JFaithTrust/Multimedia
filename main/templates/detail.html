@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content%}
+<div class="container-fluid page-header py-5 mb-5">
+	<div class="container py-5">
+		<h1 class="display-3 text-white mb-3 animated slideInDown">So'nggi yangiliklar</h1>
+		<nav aria-label="breadcrumb animated slideInDown">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-white" href="/">Asosiy</a></li>
+				<li class="breadcrumb-item text-white active" aria-current="page">Batafsil</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+<style>
+	.page-header {
+		background: linear-gradient(to right bottom, rgb(24, 75, 176), rgba(29, 26, 191, 0.5), rgba(26, 191, 180, 0.5));
+		background-size: cover;
+	}
+</style>
+<!-- Page Header End -->
+<main class="container mt-3 mb-5">
+	<!-- featured news -->
+	<style>
+		@media(max-width:700px){
+			.row-my-3{
+				display: flex;
+				flex-direction: column;
+			}
+			.row-my-3 .col-md-3{
+				margin-left: 0 !important;
+			}
+		}
+	</style>
+	<div class="row-my-3" style="display: flex;">
+		<!-- Left -->
+		<div class="col-md-8 col-lg-8">
+			<div class="card mb-3">
+				<img src="/media/{{news.image}}" class="card-img-top" alt="{{news.title}}">
+				<div class="card-body">
+					<h5 class="card-title">{{news.title}}</h5>
+					<hr />
+					<p class="card-text">{{news.detail}}</p>
+				</div>
+				<div class="card-footer">
+					In {{news.category.title}}
+				</div>
+			</div>
+
+
+
+		</div>
+		<!-- Related News -->
+		<div class="col-md-3 col-lg-3" style="margin-left: 2rem;">
+			<h3 class="mb-3 border-bottom pb-1">So'nggi Yangiliklar</h3>
+			<!-- Category Box -->
+			{% for news in related_news %}
+			<div class="card mb-3 shadow">
+				<img src="/media/{{news.image}}" class="card-img-top" alt="{{news.title}}">
+				<div class="card-body">
+					<h5 class="card-title">{{news.title}}</h5>
+					<hr />
+					<p class="card-text"><a href="/detail/{{news.id}}" class="btn btn-sm btn-primary">Batafsil</a></p>
+				</div>
+			</div>
+
+
+			{% endfor %}
+		</div>
+	</div>
+</main>
+{% endblock%}
